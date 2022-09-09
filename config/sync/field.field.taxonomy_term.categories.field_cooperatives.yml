@@ -1,0 +1,30 @@
+uuid: b8eb188d-2727-4236-aaf2-8d23aa42e555
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_cooperatives
+    - taxonomy.vocabulary.categories
+  module:
+    - entity_reference_revisions
+id: taxonomy_term.categories.field_cooperatives
+field_name: field_cooperatives
+entity_type: taxonomy_term
+bundle: categories
+label: Cooperatives
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categories: categories
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference_revisions

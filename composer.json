@@ -21,6 +21,7 @@
         "drupal/core-recommended": "^9.4",
         "drupal/paragraphs": "^1.15",
         "drupal/pathauto": "^1.11",
+        "drupal/recaptcha": "^3.0",
         "drupal/search_api": "^1.25",
         "drupal/webform": "^6.1",
         "drush/drush": "^11.1",

@@ -1,0 +1,21 @@
+uuid: c7e07be0-822f-496d-b8b9-efefbc5fd4b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_equipment
+    - node.type.real_estate
+  module:
+    - text
+id: node.real_estate.field_equipment
+field_name: field_equipment
+entity_type: node
+bundle: real_estate
+label: Equipment
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

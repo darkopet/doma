@@ -1,0 +1,28 @@
+uuid: 961f0388-9246-4773-8b21-e700e4de0488
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_groceries
+    - taxonomy.vocabulary.categories
+id: taxonomy_term.categories.field_groceries
+field_name: field_groceries
+entity_type: taxonomy_term
+bundle: categories
+label: Groceries
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categories: categories
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

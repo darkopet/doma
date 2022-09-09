@@ -1,0 +1,23 @@
+uuid: 212b8b1c-57ad-41c7-b52e-2104905a46c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_basement
+    - node.type.real_estate
+id: node.real_estate.field_basement
+field_name: field_basement
+entity_type: node
+bundle: real_estate
+label: Basement
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

@@ -1,0 +1,23 @@
+uuid: 9f730fb3-8ab5-401c-b2cb-993f35aedacf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_balconies
+    - node.type.real_estate
+id: node.real_estate.field_balconies
+field_name: field_balconies
+entity_type: node
+bundle: real_estate
+label: Balconies
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

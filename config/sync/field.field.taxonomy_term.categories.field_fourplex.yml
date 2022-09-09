@@ -1,0 +1,30 @@
+uuid: a284193d-0667-4ef9-9d18-6f3aefa4c17a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_fourplex
+    - taxonomy.vocabulary.categories
+  module:
+    - entity_reference_revisions
+id: taxonomy_term.categories.field_fourplex
+field_name: field_fourplex
+entity_type: taxonomy_term
+bundle: categories
+label: Fourplex
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categories: categories
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference_revisions

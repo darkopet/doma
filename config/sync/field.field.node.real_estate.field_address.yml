@@ -1,0 +1,21 @@
+uuid: 01be955b-eb7d-4064-8e0a-7e2ba9388417
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_address
+    - node.type.real_estate
+  module:
+    - text
+id: node.real_estate.field_address
+field_name: field_address
+entity_type: node
+bundle: real_estate
+label: Address
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

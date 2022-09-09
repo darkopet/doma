@@ -1,0 +1,23 @@
+uuid: 6b76c3b4-3dea-4410-86e7-82ebecc85615
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_renovation_year
+    - node.type.real_estate
+id: node.real_estate.field_renovation_year
+field_name: field_renovation_year
+entity_type: node
+bundle: real_estate
+label: 'Renovation Year'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

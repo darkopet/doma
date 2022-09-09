@@ -1,0 +1,44 @@
+uuid: 953d37fb-36c5-4074-bc0e-71ffc6ee5c30
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.real_estate.field_address
+    - field.field.node.real_estate.field_balconies
+    - field.field.node.real_estate.field_basement
+    - field.field.node.real_estate.field_bathrooms
+    - field.field.node.real_estate.field_condition
+    - field.field.node.real_estate.field_construction_year
+    - field.field.node.real_estate.field_description
+    - field.field.node.real_estate.field_equipment
+    - field.field.node.real_estate.field_garage
+    - field.field.node.real_estate.field_orientation
+    - field.field.node.real_estate.field_parking
+    - field.field.node.real_estate.field_renovation_year
+    - node.type.real_estate
+  module:
+    - user
+id: node.real_estate.teaser
+targetEntityType: node
+bundle: real_estate
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_address: true
+  field_balconies: true
+  field_basement: true
+  field_bathrooms: true
+  field_condition: true
+  field_construction_year: true
+  field_description: true
+  field_equipment: true
+  field_garage: true
+  field_orientation: true
+  field_parking: true
+  field_renovation_year: true

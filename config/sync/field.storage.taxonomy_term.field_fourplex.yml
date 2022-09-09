@@ -1,0 +1,20 @@
+uuid: 954641cc-2fd9-494b-b6b6-8066553d2182
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - taxonomy
+id: taxonomy_term.field_fourplex
+field_name: field_fourplex
+entity_type: taxonomy_term
+type: entity_reference_revisions
+settings:
+  target_type: taxonomy_term
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,30 @@
+uuid: 8945ee2e-35d6-4df8-8383-75837c4c1155
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_condominimus
+    - taxonomy.vocabulary.categories
+  module:
+    - entity_reference_revisions
+id: taxonomy_term.categories.field_condominimus
+field_name: field_condominimus
+entity_type: taxonomy_term
+bundle: categories
+label: Condominimus
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categories: categories
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference_revisions

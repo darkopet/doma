@@ -1,0 +1,30 @@
+uuid: 80885010-59cd-4f8e-8a97-beb11e3778c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_duplex
+    - taxonomy.vocabulary.categories
+  module:
+    - entity_reference_revisions
+id: taxonomy_term.categories.field_duplex
+field_name: field_duplex
+entity_type: taxonomy_term
+bundle: categories
+label: Duplex
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categories: categories
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference_revisions

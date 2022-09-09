@@ -1,0 +1,21 @@
+uuid: f7810823-fbc7-4a76-aa95-1461cb901e3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_storages
+    - taxonomy.vocabulary.categories
+id: taxonomy_term.categories.field_storages
+field_name: field_storages
+entity_type: taxonomy_term
+bundle: categories
+label: Storages
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

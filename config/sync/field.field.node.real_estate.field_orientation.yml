@@ -1,0 +1,21 @@
+uuid: 5044cbe7-27ab-44e7-9e09-75aaf9b24058
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_orientation
+    - node.type.real_estate
+  module:
+    - text
+id: node.real_estate.field_orientation
+field_name: field_orientation
+entity_type: node
+bundle: real_estate
+label: Orientation
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

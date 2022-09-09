@@ -1,0 +1,28 @@
+uuid: cdb21650-b176-4d28-809d-9ae65b9ab818
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_garage
+    - taxonomy.vocabulary.categories
+id: taxonomy_term.categories.field_garage
+field_name: field_garage
+entity_type: taxonomy_term
+bundle: categories
+label: Garage
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categories: categories
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

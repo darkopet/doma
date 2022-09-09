@@ -1,0 +1,18 @@
+uuid: 4195d895-ac36-4dae-92b6-356a75fa45ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.real_estate
+id: node.real_estate.title
+field_name: title
+entity_type: node
+bundle: real_estate
+label: 'Real Estate'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

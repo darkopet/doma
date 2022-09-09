@@ -1,0 +1,28 @@
+uuid: 82ec3d09-57f3-4fe2-b4e5-0e0df59b9ced
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_townhome
+    - taxonomy.vocabulary.categories
+id: taxonomy_term.categories.field_townhome
+field_name: field_townhome
+entity_type: taxonomy_term
+bundle: categories
+label: Townhomes
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categories: categories
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

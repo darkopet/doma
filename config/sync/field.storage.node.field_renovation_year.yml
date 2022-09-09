@@ -1,0 +1,20 @@
+uuid: d434bf9f-cc43-488b-b67a-622c263fc803
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_renovation_year
+field_name: field_renovation_year
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
