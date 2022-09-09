@@ -18,7 +18,11 @@
         "composer/installers": "^1.9",
         "drupal/core-composer-scaffold": "^9.4",
         "drupal/core-project-message": "^9.4",
-        "drupal/core-recommended": "^9.4"
+        "drupal/core-recommended": "^9.4",
+        "drupal/paragraphs": "^1.15",
+        "drupal/pathauto": "^1.11",
+        "drupal/search_api": "^1.25",
+        "drush/drush": "^11.1"
     },
     "conflict": {
         "drupal/drupal": "*"
