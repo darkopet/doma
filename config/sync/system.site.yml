@@ -2,9 +2,9 @@ _core:
   default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
 langcode: en
 uuid: 6f15b0c9-f883-4eab-8f03-d9d44d328b40
-name: doma.mk
+name: Doma
 mail: darkodepetrovski@gmail.com
-slogan: ''
+slogan: 'Real estator.'
 page:
   403: ''
   404: ''

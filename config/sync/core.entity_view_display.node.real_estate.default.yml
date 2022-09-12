@@ -15,6 +15,7 @@ dependencies:
     - field.field.node.real_estate.field_orientation
     - field.field.node.real_estate.field_parking
     - field.field.node.real_estate.field_renovation_year
+    - field.field.node.real_estate.field_type
     - node.type.real_estate
   module:
     - text
@@ -124,6 +125,14 @@ content:
       prefix_suffix: true
     third_party_settings: {  }
     weight: 110
+    region: content
+  field_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 113
     region: content
   links:
     settings: {  }

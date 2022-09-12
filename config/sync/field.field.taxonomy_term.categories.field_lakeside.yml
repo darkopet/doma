@@ -1,15 +1,15 @@
-uuid: cdb21650-b176-4d28-809d-9ae65b9ab818
+uuid: 82ada2ed-2c98-4a15-88be-6b574de92d40
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.taxonomy_term.field_garage
+    - field.storage.taxonomy_term.field_lakeside
     - taxonomy.vocabulary.categories
-id: taxonomy_term.categories.field_garage
-field_name: field_garage
+id: taxonomy_term.categories.field_lakeside
+field_name: field_lakeside
 entity_type: taxonomy_term
 bundle: categories
-label: Garages
+label: Lakeside
 description: ''
 required: false
 translatable: false

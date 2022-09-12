@@ -1,15 +1,15 @@
-uuid: 82ec3d09-57f3-4fe2-b4e5-0e0df59b9ced
+uuid: 04767af3-f524-4f80-84d9-abed2e081872
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.taxonomy_term.field_townhome
+    - field.storage.taxonomy_term.field_riverside
     - taxonomy.vocabulary.categories
-id: taxonomy_term.categories.field_townhome
-field_name: field_townhome
+id: taxonomy_term.categories.field_riverside
+field_name: field_riverside
 entity_type: taxonomy_term
 bundle: categories
-label: Townhomes
+label: Riverside
 description: ''
 required: false
 translatable: false

@@ -1,11 +1,11 @@
-uuid: 013f5c3d-db38-4af9-9100-7e5711ea8074
+uuid: 199b5acf-5935-460b-9866-2c22721eb8d5
 langcode: en
 status: true
 dependencies:
   module:
     - taxonomy
-id: taxonomy_term.field_townhome
-field_name: field_townhome
+id: taxonomy_term.field_lakeside
+field_name: field_lakeside
 entity_type: taxonomy_term
 type: entity_reference
 settings:

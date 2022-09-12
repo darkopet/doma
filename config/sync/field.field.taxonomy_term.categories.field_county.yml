@@ -1,15 +1,15 @@
-uuid: a6a933f9-dbf4-4930-95c1-52bcb1da33cd
+uuid: 8d07c783-a176-4c1f-af35-b41f2083a7fa
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.taxonomy_term.field_parking_lot
+    - field.storage.taxonomy_term.field_county
     - taxonomy.vocabulary.categories
-id: taxonomy_term.categories.field_parking_lot
-field_name: field_parking_lot
+id: taxonomy_term.categories.field_county
+field_name: field_county
 entity_type: taxonomy_term
 bundle: categories
-label: 'Parking lot'
+label: County
 description: ''
 required: false
 translatable: false

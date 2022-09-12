@@ -1,11 +1,11 @@
-uuid: cb569ea2-f500-4fbc-a548-d3796a840d15
+uuid: 2e4861c1-3d6e-45ae-8c38-6d74c970d3a5
 langcode: en
 status: true
 dependencies:
   module:
     - taxonomy
-id: taxonomy_term.field_parking_lot
-field_name: field_parking_lot
+id: taxonomy_term.field_seaside
+field_name: field_seaside
 entity_type: taxonomy_term
 type: entity_reference
 settings:

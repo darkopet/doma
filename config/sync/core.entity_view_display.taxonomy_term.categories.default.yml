@@ -4,21 +4,23 @@ status: true
 dependencies:
   config:
     - field.field.taxonomy_term.categories.field_condominimus
-    - field.field.taxonomy_term.categories.field_cooperatives
+    - field.field.taxonomy_term.categories.field_county
     - field.field.taxonomy_term.categories.field_duplex
+    - field.field.taxonomy_term.categories.field_factories
     - field.field.taxonomy_term.categories.field_fourplex
     - field.field.taxonomy_term.categories.field_garage
     - field.field.taxonomy_term.categories.field_gas_station
     - field.field.taxonomy_term.categories.field_groceries
     - field.field.taxonomy_term.categories.field_hospitality
     - field.field.taxonomy_term.categories.field_houses
+    - field.field.taxonomy_term.categories.field_lakeside
     - field.field.taxonomy_term.categories.field_leisure
+    - field.field.taxonomy_term.categories.field_markets
     - field.field.taxonomy_term.categories.field_offices
-    - field.field.taxonomy_term.categories.field_parking_lot
     - field.field.taxonomy_term.categories.field_retails
-    - field.field.taxonomy_term.categories.field_storage
+    - field.field.taxonomy_term.categories.field_riverside
+    - field.field.taxonomy_term.categories.field_seaside
     - field.field.taxonomy_term.categories.field_storages
-    - field.field.taxonomy_term.categories.field_townhome
     - field.field.taxonomy_term.categories.field_triplex
     - taxonomy.vocabulary.categories
   module:
@@ -45,14 +47,13 @@ content:
     third_party_settings: {  }
     weight: 2
     region: content
-  field_cooperatives:
-    type: entity_reference_revisions_entity_view
+  field_county:
+    type: entity_reference_label
     label: above
     settings:
-      view_mode: default
-      link: ''
+      link: true
     third_party_settings: {  }
-    weight: 3
+    weight: 20
     region: content
   field_duplex:
     type: entity_reference_revisions_entity_view
@@ -62,6 +63,14 @@ content:
       link: ''
     third_party_settings: {  }
     weight: 4
+    region: content
+  field_factories:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 19
     region: content
   field_fourplex:
     type: entity_reference_revisions_entity_view
@@ -113,6 +122,14 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
+  field_lakeside:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 22
+    region: content
   field_leisure:
     type: entity_reference_label
     label: above
@@ -120,6 +137,13 @@ content:
       link: true
     third_party_settings: {  }
     weight: 10
+    region: content
+  field_markets:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 18
     region: content
   field_offices:
     type: entity_reference_label
@@ -129,14 +153,6 @@ content:
     third_party_settings: {  }
     weight: 8
     region: content
-  field_parking_lot:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 14
-    region: content
   field_retails:
     type: entity_reference_label
     label: above
@@ -145,13 +161,21 @@ content:
     third_party_settings: {  }
     weight: 9
     region: content
-  field_storage:
+  field_riverside:
     type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    weight: 13
+    weight: 21
+    region: content
+  field_seaside:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 23
     region: content
   field_storages:
     type: entity_reference_label
@@ -160,14 +184,6 @@ content:
       link: true
     third_party_settings: {  }
     weight: 12
-    region: content
-  field_townhome:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 7
     region: content
   field_triplex:
     type: entity_reference_revisions_entity_view

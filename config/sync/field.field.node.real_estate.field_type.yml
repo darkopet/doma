@@ -1,15 +1,16 @@
-uuid: cdb21650-b176-4d28-809d-9ae65b9ab818
+uuid: abe853ce-321b-4fd3-a3a0-041d84613138
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.taxonomy_term.field_garage
+    - field.storage.node.field_type
+    - node.type.real_estate
     - taxonomy.vocabulary.categories
-id: taxonomy_term.categories.field_garage
-field_name: field_garage
-entity_type: taxonomy_term
-bundle: categories
-label: Garages
+id: node.real_estate.field_type
+field_name: field_type
+entity_type: node
+bundle: real_estate
+label: Type
 description: ''
 required: false
 translatable: false

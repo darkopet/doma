@@ -1,11 +1,11 @@
-uuid: 81a5f9b8-7055-4d1e-a8e0-6998d4d916fc
+uuid: 2bd2cda2-63f5-4542-a74c-a258c38f33aa
 langcode: en
 status: true
 dependencies:
   module:
     - taxonomy
-id: taxonomy_term.field_storage
-field_name: field_storage
+id: taxonomy_term.field_county
+field_name: field_county
 entity_type: taxonomy_term
 type: entity_reference
 settings:

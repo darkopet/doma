@@ -9,7 +9,7 @@ id: taxonomy_term.categories.field_gas_station
 field_name: field_gas_station
 entity_type: taxonomy_term
 bundle: categories
-label: 'Gas station'
+label: 'Gas stations'
 description: ''
 required: false
 translatable: false

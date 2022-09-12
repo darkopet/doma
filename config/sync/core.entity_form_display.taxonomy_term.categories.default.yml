@@ -4,21 +4,23 @@ status: true
 dependencies:
   config:
     - field.field.taxonomy_term.categories.field_condominimus
-    - field.field.taxonomy_term.categories.field_cooperatives
+    - field.field.taxonomy_term.categories.field_county
     - field.field.taxonomy_term.categories.field_duplex
+    - field.field.taxonomy_term.categories.field_factories
     - field.field.taxonomy_term.categories.field_fourplex
     - field.field.taxonomy_term.categories.field_garage
     - field.field.taxonomy_term.categories.field_gas_station
     - field.field.taxonomy_term.categories.field_groceries
     - field.field.taxonomy_term.categories.field_hospitality
     - field.field.taxonomy_term.categories.field_houses
+    - field.field.taxonomy_term.categories.field_lakeside
     - field.field.taxonomy_term.categories.field_leisure
+    - field.field.taxonomy_term.categories.field_markets
     - field.field.taxonomy_term.categories.field_offices
-    - field.field.taxonomy_term.categories.field_parking_lot
     - field.field.taxonomy_term.categories.field_retails
-    - field.field.taxonomy_term.categories.field_storage
+    - field.field.taxonomy_term.categories.field_riverside
+    - field.field.taxonomy_term.categories.field_seaside
     - field.field.taxonomy_term.categories.field_storages
-    - field.field.taxonomy_term.categories.field_townhome
     - field.field.taxonomy_term.categories.field_triplex
     - taxonomy.vocabulary.categories
   module:
@@ -56,23 +58,15 @@ content:
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
     third_party_settings: {  }
-  field_cooperatives:
-    type: paragraphs
-    weight: 103
+  field_county:
+    type: entity_reference_autocomplete
+    weight: 120
     region: content
     settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      closed_mode: summary
-      autocollapse: none
-      closed_mode_threshold: 0
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: ''
-      features:
-        collapse_edit_all: collapse_edit_all
-        duplicate: duplicate
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_duplex:
     type: paragraphs
@@ -91,6 +85,16 @@ content:
       features:
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
+    third_party_settings: {  }
+  field_factories:
+    type: entity_reference_autocomplete
+    weight: 119
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_fourplex:
     type: paragraphs
@@ -168,6 +172,16 @@ content:
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
     third_party_settings: {  }
+  field_lakeside:
+    type: entity_reference_autocomplete
+    weight: 122
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_leisure:
     type: entity_reference_autocomplete
     weight: 110
@@ -178,19 +192,17 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_offices:
-    type: entity_reference_autocomplete
-    weight: 108
+  field_markets:
+    type: text_textfield
+    weight: 118
     region: content
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_parking_lot:
+  field_offices:
     type: entity_reference_autocomplete
-    weight: 114
+    weight: 108
     region: content
     settings:
       match_operator: CONTAINS
@@ -208,9 +220,19 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_storage:
+  field_riverside:
     type: entity_reference_autocomplete
-    weight: 113
+    weight: 121
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_seaside:
+    type: entity_reference_autocomplete
+    weight: 123
     region: content
     settings:
       match_operator: CONTAINS
@@ -221,16 +243,6 @@ content:
   field_storages:
     type: entity_reference_autocomplete
     weight: 112
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_townhome:
-    type: entity_reference_autocomplete
-    weight: 107
     region: content
     settings:
       match_operator: CONTAINS

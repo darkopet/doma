@@ -1,15 +1,15 @@
-uuid: e0172b7b-898d-4d9c-82e2-b5876995d6d8
+uuid: 9ff43416-334f-4755-9fe1-87559fa99d23
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.taxonomy_term.field_storage
+    - field.storage.taxonomy_term.field_seaside
     - taxonomy.vocabulary.categories
-id: taxonomy_term.categories.field_storage
-field_name: field_storage
+id: taxonomy_term.categories.field_seaside
+field_name: field_seaside
 entity_type: taxonomy_term
 bundle: categories
-label: Storage
+label: Seaside
 description: ''
 required: false
 translatable: false

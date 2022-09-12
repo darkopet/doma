@@ -16,6 +16,7 @@ dependencies:
     - field.field.node.real_estate.field_orientation
     - field.field.node.real_estate.field_parking
     - field.field.node.real_estate.field_renovation_year
+    - field.field.node.real_estate.field_type
     - node.type.real_estate
   module:
     - user
@@ -42,3 +43,4 @@ hidden:
   field_orientation: true
   field_parking: true
   field_renovation_year: true
+  field_type: true

@@ -1,0 +1,21 @@
+uuid: bbc4634f-fac7-4b6c-879f-113c02d2c793
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_markets
+    - taxonomy.vocabulary.categories
+  module:
+    - text
+id: taxonomy_term.categories.field_markets
+field_name: field_markets
+entity_type: taxonomy_term
+bundle: categories
+label: Markets
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,8 @@
+uuid: 9f6cf16b-ad6e-45fe-bd6a-380e4140c245
+langcode: en
+status: true
+dependencies: {  }
+id: real-estates
+label: 'Real Estates'
+description: 'Categorized properties.'
+locked: false

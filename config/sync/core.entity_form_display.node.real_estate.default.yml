@@ -15,6 +15,7 @@ dependencies:
     - field.field.node.real_estate.field_orientation
     - field.field.node.real_estate.field_parking
     - field.field.node.real_estate.field_renovation_year
+    - field.field.node.real_estate.field_type
     - node.type.real_estate
   module:
     - path
@@ -119,6 +120,16 @@ content:
     weight: 130
     region: content
     settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_type:
+    type: entity_reference_autocomplete
+    weight: 133
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
       placeholder: ''
     third_party_settings: {  }
   path:

@@ -1,17 +1,15 @@
-uuid: b8eb188d-2727-4236-aaf2-8d23aa42e555
+uuid: 4d855630-e4a7-4900-9877-33b41d281673
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.taxonomy_term.field_cooperatives
+    - field.storage.taxonomy_term.field_factories
     - taxonomy.vocabulary.categories
-  module:
-    - entity_reference_revisions
-id: taxonomy_term.categories.field_cooperatives
-field_name: field_cooperatives
+id: taxonomy_term.categories.field_factories
+field_name: field_factories
 entity_type: taxonomy_term
 bundle: categories
-label: Cooperatives
+label: Factories
 description: ''
 required: false
 translatable: false
@@ -27,4 +25,4 @@ settings:
       direction: asc
     auto_create: false
     auto_create_bundle: ''
-field_type: entity_reference_revisions
+field_type: entity_reference

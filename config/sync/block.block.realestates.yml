@@ -1,0 +1,25 @@
+uuid: b335b658-694f-4de8-afd1-7533ce849e97
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.real-estates
+  module:
+    - system
+  theme:
+    - olivero
+id: realestates
+theme: olivero
+region: primary_menu
+weight: -7
+provider: null
+plugin: 'system_menu_block:real-estates'
+settings:
+  id: 'system_menu_block:real-estates'
+  label: 'Real Estates'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 3
+  expand_all_items: true
+visibility: {  }
