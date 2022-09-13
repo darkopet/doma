@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.real_estate.field_balconies
     - field.field.node.real_estate.field_basement
     - field.field.node.real_estate.field_bathrooms
+    - field.field.node.real_estate.field_city
     - field.field.node.real_estate.field_condition
     - field.field.node.real_estate.field_construction_year
     - field.field.node.real_estate.field_description
@@ -58,6 +59,16 @@ content:
     weight: 127
     region: content
     settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_city:
+    type: entity_reference_autocomplete
+    weight: 134
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
       placeholder: ''
     third_party_settings: {  }
   field_condition:

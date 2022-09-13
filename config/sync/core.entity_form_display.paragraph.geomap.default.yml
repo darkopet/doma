@@ -1,0 +1,14 @@
+uuid: dbe171be-98f4-41a1-8705-453852cc0f80
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.geomap
+id: paragraph.geomap.default
+targetEntityType: paragraph
+bundle: geomap
+mode: default
+content: {  }
+hidden:
+  created: true
+  status: true

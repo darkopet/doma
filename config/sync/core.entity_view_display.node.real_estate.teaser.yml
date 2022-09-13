@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.real_estate.field_balconies
     - field.field.node.real_estate.field_basement
     - field.field.node.real_estate.field_bathrooms
+    - field.field.node.real_estate.field_city
     - field.field.node.real_estate.field_condition
     - field.field.node.real_estate.field_construction_year
     - field.field.node.real_estate.field_description
@@ -35,6 +36,7 @@ hidden:
   field_balconies: true
   field_basement: true
   field_bathrooms: true
+  field_city: true
   field_condition: true
   field_construction_year: true
   field_description: true

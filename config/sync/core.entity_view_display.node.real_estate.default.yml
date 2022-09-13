@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.real_estate.field_balconies
     - field.field.node.real_estate.field_basement
     - field.field.node.real_estate.field_bathrooms
+    - field.field.node.real_estate.field_city
     - field.field.node.real_estate.field_condition
     - field.field.node.real_estate.field_construction_year
     - field.field.node.real_estate.field_description
@@ -59,6 +60,14 @@ content:
       prefix_suffix: true
     third_party_settings: {  }
     weight: 107
+    region: content
+  field_city:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 114
     region: content
   field_condition:
     type: text_default

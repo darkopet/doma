@@ -1,0 +1,8 @@
+uuid: de622c9c-d694-42de-bea6-2a2ff649a72b
+langcode: en
+status: true
+dependencies: {  }
+name: City
+vid: city
+description: 'Location of properties.'
+weight: 0
