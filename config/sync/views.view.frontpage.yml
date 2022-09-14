@@ -5,9 +5,9 @@ dependencies:
   config:
     - core.entity_view_mode.node.full
     - core.entity_view_mode.node.rss
+    - field.storage.node.field_city
   module:
     - node
-    - taxonomy
     - user
 _core:
   default_config_hash: 6eeliKIydPjqyv5V__QqTfahvJMWkHjOVUUuUIdB1ik
@@ -302,16 +302,16 @@ display:
     display_plugin: page
     position: 1
     display_options:
+      title: City
       fields:
-        term_node_tid:
-          id: term_node_tid
-          table: node_field_data
-          field: term_node_tid
+        field_city:
+          id: field_city
+          table: node__field_city
+          field: field_city
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: node
-          plugin_id: taxonomy_index_tid
+          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -323,7 +323,7 @@ display:
             external: false
             replace_spaces: false
             path_case: none
-            trim_whitespace: false
+            trim_whitespace: true
             alt: ''
             rel: ''
             link_class: ''
@@ -350,16 +350,41 @@ display:
           element_wrapper_class: ''
           element_default_classes: true
           empty: ''
-          hide_empty: false
+          hide_empty: true
           empty_zero: false
           hide_alter_empty: true
-          type: ul
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: true
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
           separator: ', '
-          link_to_taxonomy: true
-          limit: true
-          vids:
-            city: city
-            categories: '0'
+          field_api_classes: false
+      pager:
+        type: none
+        options:
+          offset: 0
+      sorts:
+        field_city_target_id:
+          id: field_city_target_id
+          table: node__field_city
+          field: field_city_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: standard
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
       filters: {  }
       filter_groups:
         operator: AND
@@ -377,22 +402,28 @@ display:
         options:
           default_field_elements: true
           inline:
-            term_node_tid: term_node_tid
+            field_city: field_city
           separator: ''
           hide_empty: false
       defaults:
+        title: false
+        pager: false
         style: false
         row: false
+        relationships: false
         fields: false
+        sorts: false
         filters: false
         filter_groups: false
+      relationships: {  }
       display_extenders: {  }
       path: node
     cache_metadata:
       max-age: -1
       contexts:
+        - 'languages:language_content'
         - 'languages:language_interface'
-        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:field.storage.node.field_city'
