@@ -1,0 +1,10 @@
+uuid: fcfcb044-7906-44ac-b7ee-75cae512c13b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.new_ad
+label: 'New Ad'
+targetEntityType: node
+cache: true

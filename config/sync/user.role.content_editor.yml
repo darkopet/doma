@@ -5,6 +5,7 @@ dependencies:
   config:
     - node.type.article
     - node.type.page
+    - node.type.real_estate
   module:
     - comment
     - contextual
@@ -30,6 +31,7 @@ permissions:
   - 'administer url aliases'
   - 'create article content'
   - 'create page content'
+  - 'create real_estate content'
   - 'create url aliases'
   - 'delete article revisions'
   - 'delete own article content'

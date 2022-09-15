@@ -2,6 +2,8 @@ uuid: 8e152cb4-218e-4f65-9129-814495d148af
 langcode: en
 status: true
 dependencies:
+  module:
+    - webform
   theme:
     - olivero
 _core:
@@ -17,4 +19,11 @@ settings:
   label: 'Page title'
   label_display: visible
   provider: core
-visibility: {  }
+visibility:
+  'entity_bundle:webform_submission':
+    id: 'entity_bundle:webform_submission'
+    negate: false
+    context_mapping:
+      webform_submission: '@webform.webform_submission_route_context:webform_submission'
+    bundles:
+      register: register
