@@ -1,0 +1,29 @@
+uuid: 6e5a0d75-5819-41ad-a15c-6635a788d95e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.city
+  module:
+    - system
+    - views
+  theme:
+    - olivero
+id: views_block__city_block_1
+theme: olivero
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:city-block_1'
+settings:
+  id: 'views_block:city-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

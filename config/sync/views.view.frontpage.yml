@@ -302,7 +302,8 @@ display:
     display_plugin: page
     position: 1
     display_options:
-      title: City
+      enabled: true
+      title: 'The Real Estator'
       fields:
         field_city:
           id: field_city
